@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-white antialiased;
+  }
+}
+
+.slick-dots {
+  @apply !bottom-[-3rem];
+}
+
+.slick-dots li {
+  @apply mx-1;
+}
+
+.slick-dots li button:before {
+  @apply text-gray-400 opacity-50 text-lg transition-all duration-300;
+}
+
+.slick-dots li.slick-active button:before {
+  @apply text-blue-500 opacity-100 scale-125;
+}
+
+.slick-prev,
+.slick-next {
+  @apply z-10 w-12 h-12 transition-all duration-300 !important;
+}
+
+.slick-prev {
+  @apply left-4 !important;
+}
+
+.slick-next {
+  @apply right-4 !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  @apply text-blue-500 opacity-75 hover:opacity-100 text-3xl transition-all duration-300;
+}
+
+.slick-slide {
+  @apply transition-all duration-700 ease-in-out;
+}
+
+.slick-slide img {
+  @apply transition-all duration-700 ease-in-out;
+}
+
+.slick-active {
+  @apply z-10;
+}
